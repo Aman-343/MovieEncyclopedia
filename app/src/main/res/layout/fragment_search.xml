@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18FFFF"
+    android:orientation="vertical"
+    tools:context=".View.Search">
+    <!-- Search Bar Container -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Search Movies"
+        android:textColor="#041079"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="#2C2C2C"
+        android:clipToPadding="false"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Enter the Movie Title..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/searchmovies"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:fontFamily="sans-serif-black"
+        android:text="Search Movies"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp" />
+
+
+</LinearLayout>
